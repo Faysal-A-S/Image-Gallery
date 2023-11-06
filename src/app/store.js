@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import deleteImageSlice from "../features/deleteImageSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    checked: deleteImageSlice,
   },
 });
